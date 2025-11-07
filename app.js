@@ -53,3 +53,36 @@ urunler.forEach(urun => {
   const kart = document.createElement('div');
   kart.classList.add('kart');
   kart.i
+// 🔸 Yeni ilan ekleme işlemi
+const ilanFormu = document.getElementById("ilanFormu");
+
+ilanFormu.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const yeniIlan = {
+    ad: document.getElementById("ilanAd").value,
+    tur: document.getElementById("ilanTur").value,
+    yas: document.getElementById("ilanYas").value,
+    aciklama: document.getElementById("ilanAciklama").value,
+    resim: document.getElementById("ilanResim").value || "https://via.placeholder.com/400x300?text=Hayvan"
+  };
+
+  // Yeni ilan kartını oluştur
+  const kart = document.createElement("div");
+  kart.classList.add("kart");
+  kart.innerHTML = `
+    <img src="${yeniIlan.resim}" alt="${yeniIlan.ad}">
+    <h3>${yeniIlan.ad}</h3>
+    <p><strong>Tür:</strong> ${yeniIlan.tur}</p>
+    <p><strong>Yaş:</strong> ${yeniIlan.yas}</p>
+    <p>${yeniIlan.aciklama}</p>
+  `;
+
+  // Sayfaya ekle
+  ilanListesi.appendChild(kart);
+
+  // Formu temizle
+  ilanFormu.reset();
+
+  alert("✅ İlan eklendi!");
+});

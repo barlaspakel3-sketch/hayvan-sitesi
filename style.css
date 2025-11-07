@@ -61,3 +61,47 @@ footer a {
   color: #4caf50;
   text-decoration: none;
 }
+#ilan-ekle {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#ilan-ekle form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+#ilan-ekle input,
+#ilan-ekle textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#ilan-ekle button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#ilan-ekle button:hover {
+  background: #3e8e41;
+}#ilan-ekle {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+

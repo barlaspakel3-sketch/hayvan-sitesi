@@ -7,7 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header><section id="ilan-ekle">
+  <h2>Yeni İlan Ekle</h2>
+  <form id="ilanFormu">
+    <label>Adı:</label>
+    <input type="text" id="ilanAd" placeholder="Hayvanın adı" required />
+
+    <label>Türü:</label>
+    <input type="text" id="ilanTur" placeholder="Kedi, köpek..." required />
+
+    <label>Yaşı:</label>
+    <input type="text" id="ilanYas" placeholder="2 yaşında..." required />
+
+    <label>Açıklama:</label>
+    <textarea id="ilanAciklama" placeholder="Kısa açıklama yaz" required></textarea>
+
+    <label>Fotoğraf Linki:</label>
+    <input type="text" id="ilanResim" placeholder="https://..." required />
+
+    <button type="submit">İlanı Ekle</button>
+  </form>
+</section>
+
     <h1>🐾 PetLine</h1>
     <p>Hayvan ilanları & güvenilir ilaçlar</p>
   </header>
